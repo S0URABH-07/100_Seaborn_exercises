@@ -1,5 +1,5 @@
 # Draw Heatmap plot with annot
-# annot-> Shows the actual values inside each cell.
+# annot-> Shows the actual values inside each cell. in float
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -9,5 +9,5 @@ data = [
     [70, 80, 90]
 ]
 
-sns.heatmap(data, annot=True)
+sns.heatmap(data, annot=True ,fmt=".1f")
 plt.show()

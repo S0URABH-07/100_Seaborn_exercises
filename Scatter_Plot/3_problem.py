@@ -1,4 +1,4 @@
-# Scatter plot with style change 
+# Scatter plot with style  
 import matplotlib.pyplot as plt
 import seaborn as sns 
 import pandas as pd

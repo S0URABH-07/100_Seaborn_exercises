@@ -9,7 +9,6 @@ sns.set_theme(
     context="paper",
     font_scale=1.1
 )
-
 plt.figure(figsize=(12,6))
 
 sns.boxplot(

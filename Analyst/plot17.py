@@ -3,14 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 df = pd.read_csv("HR_Analytics.csv")
-analysis = (
-    df.groupby("JobSatisfaction").agg(
-          AttritionRate=(
-              "Attrition",
-              lambda x: (x == "Yes").mean() * 100
-          )
-      ).reset_index()
-)
+analysis = (df.groupby("JobSatisfaction").agg(AttritionRate=("Attrition",lambda x: (x == "Yes").mean() * 100)).reset_index())
 plt.figure(figsize=(8,5))
 
 sns.lineplot(
